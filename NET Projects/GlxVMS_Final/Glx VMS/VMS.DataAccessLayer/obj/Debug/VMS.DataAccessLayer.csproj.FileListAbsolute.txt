@@ -1,0 +1,9 @@
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.DataAccessLayer\bin\Debug\VMS.DataAccessLayer.dll.config
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.DataAccessLayer\bin\Debug\VMS.DataAccessLayer.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.DataAccessLayer\bin\Debug\VMS.DataAccessLayer.pdb
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.DataAccessLayer\bin\Debug\VMS.Models.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.DataAccessLayer\bin\Debug\VMS.Models.pdb
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.DataAccessLayer\obj\Debug\VMS.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.DataAccessLayer\obj\Debug\VMS.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.DataAccessLayer\obj\Debug\VMS.DataAccessLayer.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.DataAccessLayer\obj\Debug\VMS.DataAccessLayer.pdb

@@ -1,0 +1,17 @@
+﻿
+
+form .form-control
+{
+    color:black;
+    font-weight:bold;
+}
+
+
+form .form-control:focus {
+    color: dodgerblue;
+    font-weight: bold;
+}
+form .form-control::placeholder {
+    color: #808080;
+    font-weight:200;
+}

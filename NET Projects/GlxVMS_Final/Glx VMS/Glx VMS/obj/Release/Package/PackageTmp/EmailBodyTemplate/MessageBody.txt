@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <div>
+        <p style="color:black;">Hello <span style="font-weight:bold">{0}</span>,</p>
+        <h3 style="color:black;font-weight:bold; padding-left:100px"> You Have A Visitor..!</h3>
+
+        <p style="color:black;padding-left:15px"> <span style="color:black;font-weight:bold">{1} {2}</span>  From <span style="color:black;font-weight:bold"> {3} </span>Is here for <span style="color:black;font-weight:bold">{4}<span></span></p>
+        <img src="http://10.1.10.113/VMS/Images/{5}" height="150" width="150" style="padding-left:100px" />
+
+    </div>
+    <p style="color:black;font-weight:bold">Thanks</p>
+    <p style="color:black;font-weight:bold"> Galaxe Detroit Office</p>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+<P></P>
+<div>
+
+</div>
+<!--<p> This is paragraph</p>-->
+<script>
+
+    var canvas = d3.select("body").append("svg")
+        .attr("width",500)
+        .attr("height",500);
+
+
+    var data =[
+        {x:10,y:10},
+        {x:20,y:100},
+        {x:30,y:70}
+
+    ];
+
+var group = canvas.append("g")
+    .attr("transform", "translate(100,100)");
+
+
+// line path generator
+
+          var line = d3.svg.line()
+            .x(function(d){return d.x;})
+            .y(function(d){return d.y;});
+
+        group.selectAll("path")
+            .data([data])  //[data]-used to select entire array data as single group
+            .enter()
+            .append("path")
+            .attr("d",line)
+            .attr("fill","none")
+            .attr("stroke","black")
+            .attr("stroke-width",10);
+
+
+
+
+    //Arc path generator
+    //angles are measured in radians
+var group2 = canvas.append("g")
+    .attr("transform","translate(400,200)");
+
+    var r= 100;
+        var p= Math.PI*2;//equivalent to 6.28 radians = full circle
+    var arc = d3.svg.arc()
+        .innerRadius(r-20)
+        .outerRadius(r)
+        .startAngle(0)
+        .endAngle(p-1);
+
+    group2.append("path")
+        .attr("d",arc)
+        .attr("fill","green");
+
+
+    </script>
+    </body>
+</html>

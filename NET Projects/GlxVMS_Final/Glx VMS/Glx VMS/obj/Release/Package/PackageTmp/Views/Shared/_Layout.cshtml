@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GalaxE Visitor Management Application.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="~/Content/favicon.png">
+
+    <link rel="stylesheet" href=@Url.Content("~/Content/css/bootstrap.css")>
+
+
+    <link rel="stylesheet" href=@Url.Content("~/Content/css/animate.css")>
+    <link rel="stylesheet" href=@Url.Content("~/Content/css/font-awesome.min.css")>
+    <link rel="stylesheet" href=@Url.Content("~/Content/css/slick.css")>
+    <link rel="stylesheet" href=@Url.Content("~/Content/js/rs-plugin/css/settings.css")>
+    <link rel="stylesheet" href=@Url.Content("~/Content/css/freeze.css")>
+    
+
+    <script type="text/javascript" src="~/Content/js/modernizr.custom.32033.js"></script>
+
+    <link rel="stylesheet/less" href=@Url.Content("~/Content/less/styles.less")>
+    <link rel="stylesheet/less" href=@Url.Content("~/Content/less/freeze.less") title="colors">
+    <link href="~/Content/css/Custom.css" rel="stylesheet" />
+
+    <script src="~/Content/js/less-1.7.0.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="~/Content/js/jquery-1.11.1.min.js"></script>
+   @* <script src="~/Scripts/bootstrap.js"></script>*@
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/slick.min.js"></script>
+    <script src="~/Content/js/placeholdem.min.js"></script>
+    <script src="~/Content/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="~/Content/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/Content/js/waypoints.min.js"></script>
+    <script src="~/Content/js/scripts.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="pre-loader">
+        <div class="load-con">
+            <img src="~/Content/img/freeze/logo.png" class="animated fadeInDown" alt="#">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="hidden" id="hidVisitReason" name="visitReason" value="" />
+        <input type="hidden" id="hidEmpId" name="EmpId" value="" />
+        <input type="hidden" id="hidEmpFirstName" name="EmpFirstName" value="" />
+        <input type="hidden" id="hidEmpLastName" name="EmpLastName" value="" />
+        <input type="hidden" id="hidVisFirstName" name="VisFirstname" value="" />
+        <input type="hidden" id="hidVisLastName" name="VisLastName" value="" />
+        <input type="hidden" id="hidVisCompany" name="VisCompany" value="" />
+        <input type="hidden" id="hidVisEmail" name="VisEmail" value="" />
+        <input type="hidden" id="hidVisPhone" name="VisPhone" value="" />
+        <input type="hidden" id="hidVisOfcLocation" name="VisOfcLocation" value="" />
+        <input type="hidden" id="hidImageUrl" name="VisImageUrl" value=""/>
+    </div>
+    <header>
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="fa fa-bars fa-lg"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="~/Content/img/freeze/logo.png" alt="" class="logo">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                @*<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li>
+
+                                <a class="getApp" href="#getApp">Admin</a>
+                            </li>
+                            <li>
+
+                                <a href="#support">support</a>
+                            </li>
+                        </ul>
+                    </div>*@
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-->
+        </nav>
+
+    </header>
+    @RenderBody()
+
+    <div class="wrapper">
+        <footer>
+            <div class="container">
+                <a href="#" class="scrollpoint sp-effect3">
+                    <img src="~/Content/img/freeze/logo.png" alt="" class="logo">
+                </a>
+                <p style="text-align:center;color:white">Disclaimer | Terms & Conditions </p>
+                <p style="text-align:center;color:white">Copyright 2017 GalaxE.Solutions, Inc. | All Rights Reserved</p>
+                <div class="social">
+                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>
+                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

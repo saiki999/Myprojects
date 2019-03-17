@@ -1,0 +1,632 @@
+﻿@model VMS.Models.Employee
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<header>
+    <link rel="stylesheet" type="text/css" href="placeholder.css">
+    <!--RevSlider-->
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-transition="fade">
+                    <!-- MAIN IMAGE -->
+                    <img src="~/Content/img/transparent.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption lfl fadeout hidden-xs"
+                         data-x="left"
+                         data-y="bottom"
+                         data-hoffset="30"
+                         data-voffset="0"
+                         data-easing="Power4.easeOut">
+                        <!--<img src="img/freeze/Slides/hand-freeze.png" alt="">-->
+                    </div>
+                    <div class="tp-caption lfl fadeout visible-xs"
+                         data-x="left"
+                         data-y="center"
+                         data-hoffset="700"
+                         data-voffset="0"
+                         data-easing="Power4.easeOut">
+                    </div>
+                    <div class="tp-caption large_white_bold sft" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
+                        GalaxE
+                    </div>
+                    <div class="tp-caption large_white_light sfr" data-x="770" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1400" data-easing="Power4.easeOut">
+                        App
+                    </div>
+                    <div class="tp-caption large_white_light sfb" data-x="550" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
+                        Visitor Management
+                    </div>
+                    <div class="tp-caption sfb hidden-xs" data-x="550" data-y="center" data-hoffset="0" data-voffset="85" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
+                        <a id="lnkStart" class="btn btn-primary inverse btn-lg" onclick="SlideNextPage()">Touch to Start</a>
+                    </div>
+
+                </li>
+                <!-- SLIDE 2 -->
+                <li data-transition="zoomout">
+                    <!-- MAIN IMAGE -->
+                    <img src="~/Content/img/transparent.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption lfb fadeout hidden-xs"
+                         data-x="center"
+                         data-y="bottom"
+                         data-hoffset="0"
+                         data-voffset="0"
+                         data-easing="Power4.easeOut">
+                    </div>
+
+                    <div class="tp-caption large_white_light sft" data-x="center" data-y="200" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                        <i class="fa fa-magic"></i> I am here for
+                    </div>
+                    <div class="tp-caption large_white_light sft" data-x="center" data-y="center" data-hoffset="0" data-voffset="85" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
+                        <a id="lnkVisit" class="btn btn-primary inverse btn-lg" onclick="SetLnkText(0)">a Visit</a>
+
+                        <a id="lnkInterview" class="btn btn-primary inverse btn-lg" onclick="SetLnkText(1)">an Interview</a>
+
+                        @*<a id="lnkDiscussion" class="btn btn-primary inverse btn-lg" onclick="SetLnkText(2)">a Discussion</a>*@
+
+                        <a id="lnkMeeting" class="btn btn-primary inverse btn-lg" onclick="SetLnkText(3)">a Meeting</a>
+
+                        <a id="lnkDelivery" class="btn btn-primary inverse btn-lg" onclick="SetLnkText(4)">a Delivery</a>
+
+
+                    </div>
+
+                </li>
+                <li data-transition="zoomout">
+                    <!-- MAIN IMAGE -->
+                    <img src="~/Content/img/transparent.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+
+                    <div class="tp-caption lfb fadeout hidden-xs"
+                         data-x="center"
+                         data-y="bottom"
+                         data-hoffset="0"
+                         data-voffset="0"
+                         data-easing="Power4.easeOut">
+                    </div>
+                    <div class="tp-caption large_white_light sft" data-x="center" data-y="50" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                        I'm Here To See
+                    </div>
+                    <div class="tp-caption large_white_light sft" data-x="center" data-y="150" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                        @*</div>
+                            <div class="tp-caption large_white_light sft" data-x="center" data-y="top" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">*@
+
+                        @using (Html.BeginForm("GetEmployee", "Home", FormMethod.Post))
+                        {
+                            @*<form role="form">*@
+
+
+                            @*<div class="form-group" data-x="center" data-y="100">*@
+                            @*<input type="text" id="txtEmployee" class="form-control" placeholder="Enter name, email or phone.">*@
+                            @Html.TextBoxFor(m => m.EmployeeSearchText, new { @class = "form-control", placeholder = " Name, Email or Department.", @required = "required" })
+                            @*</div>*@
+                            @*</form>*@
+                        }
+
+                    </div>
+                    <div class="tp-caption large_white_light sft" data-x="left" data-y="200" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+
+                        <div class="row" data-x="left" data-y="center">
+                            <div class="col-md-12">
+                                <div id="divEmployeeSearchResult">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @*<div class="tp-caption large_white_light sft" data-x="left" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">*@
+
+                    @*</div>*@
+
+
+
+
+
+
+                </li>
+                <!-- SLIDE 3 -->
+                <li data-transition="zoomout">
+                    <!-- MAIN IMAGE -->
+                    <img src="~/Content/img/transparent.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+
+                    <div class="tp-caption lfb fadeout hidden-xs"
+                         data-x="center"
+                         data-y="bottom"
+                         data-hoffset="0"
+                         data-voffset="0"
+                         data-easing="Power4.easeOut">
+                    </div>
+                    <div class="tp-caption large_white_light sft" data-x="center" data-y="25" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                        Tell us about yourself
+                    </div>
+                    <div class="tp-caption large_white_light sft" data-x="center" data-y="125" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                        <form role="form">
+                            <div class="form-group" id="formValidate">
+                                <div class="form-inline" id="formValidate">
+
+                                    <table class="table-responsive">
+
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding-right:5px;">
+                                                    <input type="text" id="txtFirstName" class="form-control" placeholder="Your first name" data-x="left">
+                                                </td>
+                                                <td style="padding-right:5px;"><input type="text" id="txtLastName" class="form-control" placeholder="Your last name" data-y="center"></td>
+                                                <td style="">
+                                                    <input required type="email" id="txtEmail" class="form-control" placeholder="Your email" data-x="center" data-y="160">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input style="padding-right:5px;" type="text" id="txtPhone" class="form-control" placeholder="Your phone">
+                                                </td>
+                                                <td style=" "><input type="text" id="txtCompany" class="form-control" placeholder="Your company"></td>
+                                                <td style="padding-left:40px;">
+                                                    <div class="@*tp-caption large_white_light sft*@" @*data-x="350" data-y="180"*@ @*data-hoffset="0" data-voffset="85"*@ data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
+
+                                                        <a id="btnSubmit" class="btn btn-primary inverse btn-lg">Next</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="form-inline" data-x="left" data-y="180">
+                                    <label id="lblFirstName" style="color:red;font-size:small;display:none" class="label">Enter valid First Name</label>
+                                    <label id="lblLastName" style="color:red;font-size:small;display:none" class="label">Enter valid Last Name</label>
+                                    <label id="lblEmail" style="color:red;font-size:small;display:none;" class="label">Enter valid email Address</label>
+                                    <label id="lblPhone" style="color:red;font-size:small;display:none" class="label">Enter valid Phone number</label>
+                                    <label id="lblcompany" style="color:red;font-size:small;display:none" class="label">Enter valid Company Name</label>
+
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </li>
+
+                <li data-transition="zoomout">
+                    <!-- MAIN IMAGE -->
+                    <img src="~/Content/img/transparent.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption lfb fadeout hidden-xs"
+                         data-x="center"
+                         data-y="bottom"
+                         data-hoffset="0"
+                         data-voffset="0"
+                         data-easing="Power4.easeOut">
+                    </div>
+
+                    <div class="tp-caption large_white_light sft" data-x="center" data-y="50" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                        Smile for the camera
+                    </div>
+                    <div class="jumbotron tp-caption mediumlarge_light_white sft" style=" color : black; background-color : transparent; width:320px; height: 150px;" data-x="center" data-y="150" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+
+
+
+                        <div style="width:100%; height:auto;">
+                            @*<div class="tp-caption mediumlarge_light_white sft" style=" color : black; width:100%; height:auto;" data-x="center" data-y="150" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">*@
+
+
+                            <label for="capture" style="width:auto; height:auto; margin-left : 130px; margin-top : 15px; padding: 5px 10px; border-radius: 10px ; background-color : #808080 ; color: black; cursor:pointer; font-size : 20px;"> Click </label>
+                            @*<label for="capture" style="width:auto; height:auto;margin-left : 600px;  margin-top : 15px; padding: 5px 10px; border-radius: 10px ; background-color : #808080 ; color: black; cursor:pointer; font-size : 20px;"> Click </label>*@
+                            <input type="file" data-x="center" data-y="350" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut" style="display:none" id="capture" accept="image/*" capture="user">
+                            <p style=" text-align : center; margin-top: 20px; margin-left : 7px; font-weight:bold ;font-size:15px">
+                                <span style="color:red;font-size:17px">Note:</span> Please switch to front camera.
+                            </p>
+
+                            @*<canvas id="canvas" width="200" height="200"></canvas>*@
+
+                            @*<button type="button" class="btn btn-success" id="btnSave" value="Save">Save</button>*@
+
+                        </div>
+
+
+                    </div>
+                    <div class="tp-caption large_white_light sft" data-x="center" data-y="center" data-hoffset="0" data-voffset="85" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
+
+
+                        <a class="btn btn-primary inverse btn-lg disabled" data-toggle="modal" data-target="#myModal" id="btnSave" @*href="~/EmailBodyTemplate/Visitor_agreement.html"*@ value="Save">Proceed</a>
+
+                        @*<a data-toggle="modal" data-target="#myModal" href="~/EmailBodyTemplate/Test.html">Test</a>*@
+
+
+                        @*<a class="btn btn-primary inverse btn-lg" data-toggle="modal" data-target="#myModal" id="btnNext" href="~/EmailBodyTemplate/Visitor_agreement.html" value="Next">Next</a>*@
+
+                    </div>
+
+
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<div class="modal" id="myModal" role="dialog" style="z-index:1100">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <b style="font-size:30px;text-align:center">GalaxE Solutions</b>
+                <p style="font-size:25px">Visitor Agreement</p>
+            </div>
+            <div class="modal-body">
+                <b><ins> Welcome To GalaxE Solutions</ins> </b>
+                <br />
+
+                <h2>Visitor Guidelines</h2>
+                <br />
+                <p>
+                    Visitors are welcome to visit during hours of operations. For your safety & security we have the following
+                    guidelines:
+                </p>
+                <div>
+                    <ol type="a">
+                        <li style="padding-left:10px;"> Agree to follow the company's rules before entry is permitted into the building.</li>
+                        <li style="padding-left:10px;">All visitors must sign in and out through the main entrance lobby.</li>
+                        <li style="padding-left:10px;">All visitors are required to read and acknowledge the Non-Disclosure and Waiver Agreement.</li>
+                        <li style="padding-left:10px;">Smoking/tobacco use is prohibited in our facility. Please use designated outside areas.</li>
+                        <li style="padding-left:10px;">Firearms/weapons are prohibited in our facility.</li>
+                        <li style="padding-left:10px;">In the event of an emergency. Follow signage to the designated muster point.</li>
+                    </ol>
+                </div>
+                <b>Visitors Non-Disclosure and Waiver Agreement</b>
+                <p>
+                    During my visit to your facility, I will learn and/or have disclosed to me proprietary or confidential information
+                    (including, without limitations, information relating to technology, trade secrets, processes, materials,
+                    equipment, drawings, specifications, prototypes and products) and may receive samples of products which
+                    not generally known to the public (hereinafter collectively called “Confidential Information”).
+                </p>
+                <div>
+                    <p>1. In consideration of your permission to visit your facility & for the courtesies extended to me during my visit:</p>
+                    <p style="padding-left:30px"> I agree that I will not, without your written permission or that of your authorized representative, either;</p>
+                    <ol type="a">
+                        <li style="padding-left:10px;border-left:10px;">
+                            Disclose or otherwise make available to others any Confidential Information disclosed to me during this
+                            and any subsequent visit which (i) was not known to me or my organization prior to disclosure by you, or (ii) is
+                            not now or subsequently becomes a part of the public domain as a result of publication or otherwise; or
+                        </li>
+
+                        <li style="padding-left:10px;border-left:10px;">Use or assist others in using or further developing in any manner any confidential information.</li>
+                        <li style="padding-left:10px;border-left:10px;">Use cameras or video technology to disclose confidential information.</li>
+
+                    </ol>
+
+                    <p>
+                        2. also agree to conform to any applicable safety requirements, which are brought to my attention by any
+                        employee or by signs posted in the areas that I visit while on the premises, and to observe other reasonable
+                        safety precautions.
+                    </p>
+                    <p>
+                        3. I further agree to release the company, its officers, agents, employees, invitees or licensees from all claims,
+                        losses, expenses (including attorney’s fees), interest, damage, and liability to the extent caused by or resulting
+                        from my negligence or willful misconduct.
+                    </p>
+                    <p>
+                        4. Please be advised by signing into the facility, you have acknowledged and understood the Visitor Guidelines
+                        and Non-Disclosure Agreement posted.
+                    </p>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-success" id="success">Agree</a>
+                <button class="btn btn-danger" style="color:white" data-dismiss="modal" id="cancel">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+        $(document).ready(function () {
+            var btnsubmit = document.getElementById('btnSubmit');
+            btnsubmit.onclick = submit;
+
+
+            $('#EmployeeSearchText').on('change textInput input', function () {
+
+
+                    SendSearchData();
+
+
+
+
+            });
+
+
+            function guid() {
+            function s4() {
+                return Math.floor((1 + Math.random()) * 0x10000)
+                    .toString(16)
+                    .substring(1);
+            }
+            return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+                s4() + '-' + s4() + s4() + s4();
+        }
+
+
+            var imageFileName = "Emp_" + guid() + ".png";
+           $("#hidImageUrl").val(imageFileName);
+
+
+           $('#capture').on('change', function () {
+               $('#btnSave').removeClass('disabled');
+                //var context = document.getElementById("canvas").getContext("2d");
+                var fileInput = document.getElementById("capture");
+
+                if (fileInput.files && fileInput.files[0]) {
+                    var FR = new FileReader();
+                    //FR.onload = function (e) {
+                    //    var img = new Image();
+                    //    img.addEventListener("load", function () {
+                    //        context.drawImage(img, 0, 0);
+                    //    });
+                    //    img.src = e.target.result;
+                    //};
+                    FR.readAsDataURL(fileInput.files[0]);
+                }
+            });
+
+
+            $("#btnSave").on('click', function () {
+
+            var fileInput = document.getElementById("capture");
+
+
+
+            if (fileInput.files && fileInput.files[0]) {
+                var FR = new FileReader();
+                //console.log('2');
+
+                FR.readAsDataURL(fileInput.files[0]);
+               // data: '{ "imageData" : "' + e.target.result + '","imageFile":"' + imageFileName+'" }',
+                //alert(imageFileName);
+
+
+                var imageDataURI;
+                var fname = $("#hidvfname").val();
+
+                FR.onload = function (e) {
+                    //console.log(e.target.result);
+                    //imageDataURI = e.target.result;
+                    var city = $("#hidVisOfcLocation").val();
+                    $.ajax({
+                        type: 'POST',
+
+                        url: '@Url.Content("~/Home/UploadImage")',
+                        data: JSON.stringify({
+                            imageData: e.target.result,
+                            imageFile: imageFileName,
+                            //OfcLocation: city
+                        }),
+                        contentType: 'application/json; charset=utf-8',
+                        dataType: 'json',
+                        success: function (msg) {
+
+                            //alert("Image Saved sucesfully");
+
+                                                        @*window.location.href = '@Url.Content("~/Home/LastPage?file=")' + imageFileName + '&fname=' + $("#hidVisFirstName").val() + '&lname=' + $("#hidVisLastName").val() + '&purpose=' + $("#hidVisitReason").val() + '&company=' + $("#hidVisCompany").val()
+                                + '&email=' + $("#hidVisEmail").val() + '&phone=' + $("#hidVisPhone").val() + '&hostempid=' + $("#hidEmpId").val() + '&empfname=' + $("#hidEmpFirstName").val() + '&emplname=' + $("#hidEmpLastName").val() + '&ofcLocation=' + $("#hidVisOfcLocation").val();*@
+
+                        }
+                            });
+                };
+
+
+            }
+
+
+        });
+        });
+
+
+
+        function SetLnkText(flag) {
+            if (flag == 0) {
+                $("#hidVisitReason").val(lnkVisit.innerText);
+            } else if (flag == 1) {
+                $("#hidVisitReason").val(lnkInterview.innerText);
+            }
+            //else if (flag == 2) {
+            //    $("#hidVisitReason").val(lnkDiscussion.innerText);
+            //}
+            else if (flag == 3) {
+                $("#hidVisitReason").val(lnkMeeting.innerText);
+            }else {
+                $("#hidVisitReason").val(lnkDelivery.innerText);
+            }
+            getCity();
+            SlideNextPage();
+        }
+
+        function SetEmployee(id, fname, lname) {
+            $("#hidEmpId").val(id);
+            $("#hidEmpFirstName").val(fname);
+            $("#hidEmpLastName").val(lname);
+            SlideNextPage();
+        }
+
+        function CallHomePage() {
+            window.location.href = window.location.pathname;
+        }
+
+        function SlideNextPage() {
+            $('.tp-rightarrow').trigger('click');
+        }
+
+        function getCity() {
+            urlLeftPart = @Html.Raw(HttpUtility.JavaScriptStringEncode(
+        new Uri(
+                   new Uri(this.Context.Request.Url.GetLeftPart(UriPartial.Authority)),
+                   Url.Content("~/")
+               ).ToString(), true));
+            var url = '@Request.Url'.toLowerCase();
+            $("#hidVisOfcLocation").val(window.location.href.substring(urlLeftPart.length, url.indexOf("/home")));
+
+        };
+
+        function submit() {
+            if (validate()) {
+
+                $("#hidVisFirstName").val($("#txtFirstName").val());
+                $("#hidVisLastName").val($("#txtLastName").val());
+                $("#hidVisCompany").val($('#txtCompany').val());
+                $("#hidVisEmail").val($("#txtEmail").val());
+                $("#hidVisPhone").val($('#txtPhone').val());
+                SlideNextPage();
+            }
+        };
+
+        function isValidEmailAddress(emailAddress) {
+            var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+            return pattern.test(emailAddress);
+        };
+
+
+        function isValidPhone(phoneNumber) {
+            var filter = /^[0-9-+]+$/;
+            if (filter.test(phoneNumber)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        };
+
+        function isValidName(name) {
+            var filter = /^([a-zA-Z]{3,16})$/;
+            if (filter.test(name)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        };
+
+
+        function validate() {
+            var result = true;
+            if (!isValidEmailAddress($("#txtEmail").val())) {
+                result = false;
+                document.getElementById('lblEmail').style.display = "block";
+            } else {
+                document.getElementById('lblEmail').style.display = "none";
+            }
+            if (!isValidPhone($("#txtPhone").val())) {
+                result = false;
+                document.getElementById('lblPhone').style.display = "block";
+            } else {
+                document.getElementById('lblPhone').style.display = "none";
+            }
+            if (!isValidName($("#txtFirstName").val())) {
+                result = false;
+                document.getElementById('lblFirstName').style.display = "block";
+            } else {
+                document.getElementById('lblFirstName').style.display = "none";
+            }
+            if (!isValidName($("#txtLastName").val())) {
+                result = false;
+                document.getElementById('lblLastName').style.display = "block";
+            } else {
+                document.getElementById('lblLastName').style.display = "none";
+            }
+
+            if ($(txtCompany).val().length === 0) {
+                alert("invalid company name");
+                result = false;
+                document.getElementById('lblcompany').style.display = "block";
+            } else {
+                if ($("#txtCompany").val() != "Your company") {
+                    document.getElementById('lblcompany').style.display = "none";
+                } else {
+                    result = false;
+                    document.getElementById('lblcompany').style.display = "block";
+                }
+            }
+            return result;
+
+        }
+
+        function CreateEmployeeBadges(strJsonEmployee) {
+            $('#divEmployeeSearchResult')[0].innerHTML = "";
+            var jsonData = $.parseJSON(strJsonEmployee);
+            var designString = "";
+            $.each(jsonData, function (i, obj) {
+                if ((i == 0) || (i == 3) || (i == 6) || (i == 9)) {
+                    designString = designString + "<div class='platforms'>";
+                }
+                designString = designString + "<a onclick=\"SetEmployee('" + obj.Id + "' ,'" + obj.EmployeeFirstName + "','" + obj.EmployeeLastName + "')\" class='btn btn-primary sp-effect1'><img src='@Url.Content("~/Content/img/EmployeeImages/")" + obj.EmployeePhotoUrl + "' class='img-circle' alt='Missing Image' width='50' height='50'> &nbsp;<b>" + obj.EmployeeFirstName + " " + obj.EmployeeLastName + "</b></a>&nbsp";
+                if ((i == 2) || (i == 5) || (i == 8)) {
+                    designString = designString + "</div>";
+                }
+            });
+
+            jQuery('#divEmployeeSearchResult').append(designString);
+
+        }
+
+
+        function SendSearchData() {
+            var search = $("#EmployeeSearchText").val();
+            //alert(search);
+            $("#EmployeeSearchText").autocomplete({
+                source: function (request, response) {
+                    var city = $("#hidVisOfcLocation").val();
+
+                    $.ajax({
+                        url: '@Url.Content("~/Home/GetEmployee")',
+                        type: "POST",
+                        dataType: "json",
+                        data: { searchText: search, location: city },
+                        success: function (data) {
+
+                        CreateEmployeeBadges(data);
+
+
+
+
+
+
+                        },
+                        error: function () {
+                            alert('something went wrong !');
+                        }
+                    })
+                },
+                messages: {
+                    noResults: "",
+                    results: ""
+                }
+            });
+        }
+     $('#success').on('click', function () {
+
+                                     alert("Image Saved sucesfully");
+         window.location.href = '@Url.Content("~/Home/LastPage?file=")' + $("#hidImageUrl").val() + '&fname=' + $("#hidVisFirstName").val() + '&lname=' + $("#hidVisLastName").val() + '&purpose=' + $("#hidVisitReason").val() + '&company=' + $("#hidVisCompany").val()
+            + '&email=' + $("#hidVisEmail").val() + '&phone=' + $("#hidVisPhone").val() + '&hostempid=' + $("#hidEmpId").val() + '&empfname=' + $("#hidEmpFirstName").val() + '&emplname=' + $("#hidEmpLastName").val() + '&ofcLocation=' + $("#hidVisOfcLocation").val();
+
+        });
+     $('#cancel').on('click', function () {
+         alert("Please click Agree to Proceed");
+     });
+
+        //$('#success').click(function () {
+        //    alert("model");
+        //});
+
+</script>

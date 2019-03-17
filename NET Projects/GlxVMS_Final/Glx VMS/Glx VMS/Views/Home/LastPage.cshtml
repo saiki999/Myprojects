@@ -1,0 +1,177 @@
+﻿@model VMS.Models.VisitorVisit
+
+@{
+    ViewBag.Title = "LastPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+
+
+<header>
+    @*<script language="javascript" type="text/javascript">
+            window.history.forward();
+        </script>*@
+    <!--RevSlider-->
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-transition="fade">
+                    <!-- MAIN IMAGE -->
+                    <img src="~/Content/img/transparent.png" alt="slidebg1" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption lfl fadeout hidden-xs"
+                         data-x="left"
+                         data-y="bottom"
+                         data-hoffset="30"
+                         data-voffset="0"
+                         data-easing="Power4.easeOut">
+                        <!--<img src="img/freeze/Slides/hand-freeze.png" alt="">-->
+                    </div>
+                    <div class="tp-caption lfl fadeout visible-xs"
+                         data-x="left"
+                         data-y="center"
+                         data-hoffset="700"
+                         data-voffset="0"
+                         data-easing="Power4.easeOut">
+                        <img src="~/Content/img/freeze/iphone-freeze.png" alt="">
+                    </div>
+
+                    <div class="tp-caption mediumlarge_light_white_center sft" data-x="0" data-y="100" data-hoffset="0" data-voffset="-100" data-speed="500" data-start="1400" data-easing="Power4.easeOut"><img src="~/Images/@ViewBag.Image" style="border-radius: 50%;" alt="slidebg1" data-bgfit="cover" data-bgrepeat="no-repeat" width="400" height="400" /></div>
+                    <div class="tp-caption mediumlarge_light_white_center sft" data-x="500" data-y="100" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1400" data-easing="Power4.easeOut">
+                        I am here for <span style="font-weight:bold; color : Black">@ViewBag.Purpose</span>
+                    </div>
+                    <div class="tp-caption mediumlarge_light_white_center sft" data-x="500" data-y="200" data-hoffset="0" data-voffset="70" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
+                        My name is <span style="font-weight:bold; color : Black"> @ViewBag.FirstName  @ViewBag.LastName </span>
+                    </div>
+                    <div class="tp-caption mediumlarge_light_white_center sft" data-x="500" data-y="300" data-hoffset="0" data-voffset="60" data-speed="1000" data-start="1600" data-easing="Power4.easeOut">
+                        I am from <span style="font-weight:bold; color : Black"> @ViewBag.Company </span>
+                    </div>
+                    <div class="tp-caption mediumlarge_light_white_center sfb" data-x="550" data-y="400" data-hoffset="0" data-voffset="50" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
+                        &#9989;  Looks good, sign me in!!
+                    </div>
+
+                    <a id="btnsubmit" class="btn btn-primary inverse btn-lg tp-caption" data-x="500" data-y="500" data-hoffset="0" data-voffset="50" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">Submit</a>
+                    <a id="btncancel" class="btn btn-danger inverse btn-lg tp-caption" data-x="650" data-y="500" data-hoffset="0" data-voffset="50" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">Cancel</a>
+                    
+
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+
+<script>
+
+
+    $(document).ready(function () {
+
+        var btnsubmit = document.getElementById('btnsubmit');
+        btnsubmit.onclick = submit;
+
+        $("#btncancel").click(function () {
+
+            MovetofirstPage();
+        });
+    });
+
+
+
+function submit() {
+
+
+        var model = JSON.stringify({
+            VisitorFirstName: ' @ViewBag.FirstName',
+            VisitorLastName: '@ViewBag.LastName',
+            Email: '@ViewBag.Email',
+            Phone: '@ViewBag.Phone',
+            Company: '@ViewBag.Company',
+            ImageURL: '@ViewBag.Image',
+            HostEmployeeId: '@ViewBag.HostEmpId',
+            EmployeeFirstName: '@ViewBag.EmpFirstName',
+            EmployeeLastName: '@ViewBag.EmpLastName',
+            Purpose: '@ViewBag.Purpose',
+            OfficeLocation: '@ViewBag.ofcLocation'
+
+        });
+
+
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Content("~/Home/PostVisitor")',
+            contentType: 'application/json',
+            data: model,
+            cache: false,
+            success: function () {
+
+                alert("Thank You For Visiting Galaxe Solutions..!");
+                @*window.location.href = '@Url.Content("~/Home/Index")';*@
+                MovetofirstPage();
+            },
+            failure: function (response) {
+                alert("faliure");
+            },
+            error: function (response) {
+                alert("Thank You For Visiting Galaxe Solutions..!");
+                MovetofirstPage();
+
+
+            }
+        });
+    }
+
+     function MovetofirstPage() {
+        var link = '@Url.Content("~/")' + '@ViewBag.ofcLocation' + '/home/index';
+        window.location.href = link;
+    };
+    (function (global) {
+
+        if (typeof (global) === "undefined") {
+            throw new Error("window is undefined");
+        }
+
+        var _hash = "!";
+        var noBackPlease = function () {
+            global.location.href += "#";
+
+            
+            global.setTimeout(function () {
+                global.location.href += "!";
+            }, 50);
+        };
+
+        global.onhashchange = function () {
+            if (global.location.hash !== _hash) {
+                global.location.hash = _hash;
+            }
+        };
+
+        global.onload = function () {
+            noBackPlease();
+
+            // disables backspace on page except on input fields and textarea..
+            document.body.onkeydown = function (e) {
+                var elm = e.target.nodeName.toLowerCase();
+                if (e.which === 8 && (elm !== 'input' && elm !== 'textarea')) {
+                    e.preventDefault();
+                }
+                // stopping event bubbling up the DOM tree..
+                e.stopPropagation();
+            };
+        }
+
+    })(window);
+
+
+
+
+</script>
+

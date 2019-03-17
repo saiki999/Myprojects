@@ -1,0 +1,358 @@
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\ApplicationInsights.config
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\csc.exe
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\csc.exe.config
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\csc.rsp
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\csi.exe
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\csi.exe.config
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\csi.rsp
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.AppContext.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Console.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.IO.Compression.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.IO.Pipes.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Security.AccessControl.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Security.Claims.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Threading.Thread.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.ValueTuple.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XPath.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\vbc.exe
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\vbc.exe.config
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\vbc.rsp
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\VBCSCompiler.exe
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Glx VMS.dll.config
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Glx VMS.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Glx VMS.pdb
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Antlr3.Runtime.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.AI.Web.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.ApplicationInsights.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Newtonsoft.Json.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.Helpers.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.Mvc.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.Optimization.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.Razor.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.WebPages.Deployment.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.WebPages.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.WebPages.Razor.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\WebGrease.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.Helpers.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.Mvc.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.Optimization.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.Razor.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.WebPages.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.WebPages.Deployment.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\System.Web.WebPages.Razor.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Antlr3.Runtime.pdb
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Newtonsoft.Json.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.ApplicationInsights.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\bin\Microsoft.AI.Web.xml
+C:\Glx VMS Git\Glx VMS\Glx VMS\obj\Debug\Glx VMS.csprojResolveAssemblyReference.cache
+C:\Glx VMS Git\Glx VMS\Glx VMS\obj\Debug\Glx VMS.csproj.CoreCompileInputs.cache
+C:\Glx VMS Git\Glx VMS\Glx VMS\obj\Debug\Glx VMS.dll
+C:\Glx VMS Git\Glx VMS\Glx VMS\obj\Debug\Glx VMS.pdb
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\ApplicationInsights.config
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\csc.exe
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\csc.exe.config
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\csc.rsp
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\csi.exe
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\csi.exe.config
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\csi.rsp
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.AppContext.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Console.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.IO.Compression.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.IO.Pipes.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Security.Claims.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Threading.Thread.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.ValueTuple.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\vbc.exe
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\vbc.exe.config
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\vbc.rsp
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Glx VMS.dll.config
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Glx VMS.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Glx VMS.pdb
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Antlr3.Runtime.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.AI.Web.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Newtonsoft.Json.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.Helpers.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.Mvc.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.Optimization.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.Razor.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.WebPages.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\WebGrease.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.Helpers.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.Mvc.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.Optimization.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.Razor.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.WebPages.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Antlr3.Runtime.pdb
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Newtonsoft.Json.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\bin\Microsoft.AI.Web.xml
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\obj\Debug\Glx VMS.csprojResolveAssemblyReference.cache
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\obj\Debug\Glx VMS.csproj.CoreCompileInputs.cache
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\obj\Debug\Glx VMS.dll
+C:\Users\nbhatia\Source\Repos\gxvisitormanagement\Glx VMS\Glx VMS\obj\Debug\Glx VMS.pdb
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\obj\Debug\Glx VMS.csprojResolveAssemblyReference.cache
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\obj\Debug\Glx VMS.csproj.CoreCompileInputs.cache
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\obj\Debug\Glx VMS.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\obj\Debug\Glx VMS.pdb
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\ApplicationInsights.config
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\csc.exe
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\csc.exe.config
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\csc.rsp
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\csi.exe
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\csi.exe.config
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\csi.rsp
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.AppContext.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Console.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.IO.Compression.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.IO.Pipes.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Security.Claims.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Threading.Thread.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.ValueTuple.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\vbc.exe
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\vbc.exe.config
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\vbc.rsp
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Glx VMS.dll.config
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Glx VMS.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Glx VMS.pdb
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Antlr3.Runtime.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.AI.Web.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Newtonsoft.Json.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.Helpers.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.Mvc.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.Optimization.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.Razor.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.WebPages.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\WebGrease.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.Helpers.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.Mvc.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.Optimization.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.Razor.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.WebPages.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Antlr3.Runtime.pdb
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Newtonsoft.Json.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement2\Glx VMS\Glx VMS\bin\Microsoft.AI.Web.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\ApplicationInsights.config
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\csc.exe
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\csc.exe.config
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\csc.rsp
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\csi.exe
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\csi.exe.config
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\csi.rsp
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.AppContext.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Console.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.IO.Compression.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.IO.Pipes.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Security.AccessControl.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Security.Claims.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Threading.Thread.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XPath.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\vbc.exe
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\vbc.exe.config
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\vbc.rsp
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\VBCSCompiler.exe
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\roslyn\System.ValueTuple.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Glx VMS.dll.config
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Glx VMS.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Glx VMS.pdb
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Antlr3.Runtime.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.AI.Web.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.ApplicationInsights.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Newtonsoft.Json.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.Helpers.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.Mvc.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.Optimization.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.Razor.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.WebPages.Deployment.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.WebPages.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.WebPages.Razor.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\WebGrease.dll
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.Helpers.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.Mvc.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.Optimization.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.Razor.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.WebPages.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.WebPages.Deployment.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\System.Web.WebPages.Razor.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Antlr3.Runtime.pdb
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Newtonsoft.Json.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.ApplicationInsights.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Project\VMS\Glx VMS\Glx VMS\bin\Microsoft.AI.Web.xml
+C:\Project\VMS\Glx VMS\Glx VMS\obj\Debug\Glx VMS.csprojResolveAssemblyReference.cache
+C:\Project\VMS\Glx VMS\Glx VMS\obj\Debug\Glx VMS.csproj.CoreCompileInputs.cache
+C:\Project\VMS\Glx VMS\Glx VMS\obj\Debug\Glx VMS.dll
+C:\Project\VMS\Glx VMS\Glx VMS\obj\Debug\Glx VMS.pdb

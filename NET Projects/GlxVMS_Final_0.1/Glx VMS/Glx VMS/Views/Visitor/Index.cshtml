@@ -1,0 +1,201 @@
+﻿@model VMS.Models.VisitorVisit
+
+@{
+    ViewBag.Title = "Index";
+}
+@*<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />*@
+
+<style>
+    td, th {
+        padding: 0;
+        border: 1px solid;
+    }
+
+    .table > thead > tr > th {
+        border: 1px solid;
+        border-top: 1px solid !important;
+    }
+    .table {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    /*tbody tr:nth-child(even) {
+        background-color: rgba(136, 141, 151, 0.58);
+        color: #fff;
+    }*/
+
+    thead tr {
+        background: gray;
+    }
+</style>
+
+<header>
+    @*<link rel="stylesheet" type="text/css" href="placeholder.css">*@
+    <!--RevSlider-->
+    <section id="tp-banner-container">
+        <div class="tp-banner">
+            @*<div class="container-fluid">*@
+                <div class="section-heading inverse scrollpoint sp-effect3">
+                    <h1>Visitor Monthly/Daily </h1>
+                    <div class="divider"></div>
+
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <label style="color: white;">Select Month : </label>
+                            <select id="ddlmonth" style="height: 30px;width: 55%;">
+                                <option value="">Select</option>
+                                <option value="1">Jan</option>
+                                <option value="2">Feb</option>
+                                <option value="3">Mar</option>
+                                <option value="4">Apr</option>
+                                <option value="5">May</option>
+                                <option value="6">Jun</option>
+                                <option value="7">Jul</option>
+                                <option value="8">Aug</option>
+                                <option value="9">Sep</option>
+                                <option value="10">Oct</option>
+                                <option value="11">Nov</option>
+                                <option value="12">Dec</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-4">
+                            <label style="color: white;">Select Date : </label>
+                            <input type="date" id="visitorDate" style="height: 30px;width: 55%;" placeholder="Select date" data-x="left">
+                        </div>
+
+                        <div class="col-xs-2">
+                            <a href="javascript:void(0)" id="btnvisitordate" class="btn btn-primary inverse scrollpoint sp-effect1" onclick="getVisitorData()">
+                                <span>Search</span><br>
+                            </a>
+                        </div>
+                        <div class="col-xs-2">
+                            <label id="lblError" style="float: left; color: red;"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="color:white">
+                    <div class="col-xs-12">
+
+                        <div id="gridviewVisitorsList" class="table-responsive">
+
+                        </div>
+                        <div id="gridviewVisitorsListNoData" class="table-responsive" style="text-align:center"></div>
+                    </div>
+                </div>
+                @*<div class="section-heading scrollpoint sp-effect3">
+
+                </div>*@
+            </div>
+       @* </div>*@
+    </section>
+
+
+    <section id="support" class="doublediagonal">
+        <div class="container">
+            <div class="section-heading scrollpoint sp-effect3">
+
+            </div>
+        </div>
+    </section>
+
+
+</header>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
+<script>
+    function getVisitorData() {
+        $("#lblError")[0].style.display = "none";
+        $("#lblError")[0].innerHTML = "";
+        var dvTable = $("#gridviewVisitorsList");
+        dvTable.html("");
+        $("#gridviewVisitorsListNoData").html("");
+        var type = 0;
+        var date = 0;
+        if ($("#visitorDate").val() == "" && $("#ddlmonth").val() == "") {
+
+            var dvTable = $("#gridviewVisitorsListNoData");
+            dvTable.html("");
+            dvTable.append("<label style='color:red;'>Select one</label>");
+
+            return true;
+
+        }
+        else if ($("#visitorDate").val() != "" && $("#ddlmonth").val() != "") {
+
+            var dvTable = $("#gridviewVisitorsListNoData");
+            dvTable.html("");
+            dvTable.append("<label style='color:red;'>Select only one</label>");
+            return true;
+        }
+
+        if ($("#visitorDate").val() != "") {
+            var getSelectedDate = new Date($("#visitorDate").val());
+
+            date = $("#visitorDate").val();
+            type = 1;
+        }
+        else {
+            type = 2;
+            date = $("#ddlmonth").val();
+        }
+
+        var obj = {};
+        obj.type = parseInt(type);
+        obj.selecteddate = date;
+        $.ajax({
+            method: 'post',
+            url: '@Url.Content("~/Visitor/GetVisitorsInfo")',
+            data: obj
+        }).success(function (data) {
+
+            var visitorList = JSON.parse(data);
+            if (visitorList.length > 0) {
+                var list = "";
+                list = "<table  class='table table- bordered table- hover'>";
+                list += " <thead>";
+                list += "   <tr>";
+                list += "<th>Visitor Name</th>";
+                list += "<th>Email</th>";
+                list += "<th>Phone</th>";
+                list += "<th>Company</th>";
+                list += "<th>Employee</th>";
+                list += "<th>Purpose</th>";
+                list += "<th>Check-In time</th>";
+                list += "<th>ImageURL</th>";
+                list += " </tr > "
+                list += "</thead > ";
+                list += "<tbody > ";
+                list += "</tbody > ";
+
+                for (var i = 0; i < visitorList.length; i++) {
+                    var visitorCheckInTime = new moment(visitorList[i].VisitorCheckInTime);
+                    list += "   <tr>";
+                    list += "<td>" + visitorList[i].visitorname + "</td>";
+                    list += "<td>" + visitorList[i].Email + "</td>";
+                    list += "<td>" + visitorList[i].Phone + "</td>";
+                    list += "<td>" + visitorList[i].Company + "</td>";
+                    list += "<td>" + visitorList[i].employeename + "</td>";
+                    list += "<td>" + visitorList[i].Purpose + "</td>";
+                    list += "<td>" + visitorCheckInTime.format('MMMM Do YYYY, h:mm:ss a')+ "</td>";
+
+                    list += "<td><img src='@Url.Content("~/Images/")" + visitorList[i].ImageURL +"'width='80' height='80'></td>";
+                    list += "</tr > ";
+                }
+
+                list += "</table>";
+
+                var dvTable = $("#gridviewVisitorsList");
+                dvTable.html("");
+                dvTable.append(list);
+            }
+            else {
+                var dvTable = $("#gridviewVisitorsListNoData");
+                dvTable.html("");
+                dvTable.append("<label>No visitor list available</label>");
+            }
+
+        })
+    }
+</script>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d3</title>
+
+    <!--<script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <!--<script src="js/plugins.js"></script>-->
+    <!--<script src="js/main.js"></script>-->
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+{{#shares}}
+
+{{/shares}}
+
+
+<script>
+    var liveSharePrices =[
+        {
+            "shareName":"Ethereum",
+            "code":"ETH",
+            "shareType":"Crypto",
+            "price":830
+
+        },
+        {
+            "shareName":"Bitcoin",
+            "code":"BTC",
+            "shareType":"Crypto",
+            "price":8030
+        },
+        {
+            "shareName":"Bitcoin-Cash",
+            "code":"BCH",
+            "shareType":"Crypto",
+            "price":1000
+        },
+        {
+            "shareName": "Litecoin",
+            "code": "LTC",
+            "shareType": "Crypto",
+            "price": 150
+        },
+        {
+            "shareName":"Ford",
+            "code":"F",
+            "shareType":"Share",
+            "price":10.85
+        },
+        {
+            "shareName":"Sprint",
+            "code":"S",
+            "shareType":"Share",
+            "price":5.44
+        },
+        {
+            "shareName":"Apple",
+            "code":"AAPL",
+            "shareType":"Share",
+            "price":161
+        },
+        {
+            "shareName":"Tesla",
+            "code":"TSLA",
+            "shareType":"Share",
+            "price":342.50
+        }
+
+    ];
+
+
+    var width=1000;
+    var height=1000;
+
+    var openShares = "";
+
+
+
+    var canvas = d3.select("body")
+        .append("svg")
+        .attr("width",width)
+        .attr("height",height);
+
+    // var circle = canvas.append("circle")
+
+  function findPrice (liveSharePrices,shareName){
+
+
+
+  };
+
+    console.log(liveSharePrices[1].shareName);
+
+</script>
+
+
+
+
+</body>
+</html>

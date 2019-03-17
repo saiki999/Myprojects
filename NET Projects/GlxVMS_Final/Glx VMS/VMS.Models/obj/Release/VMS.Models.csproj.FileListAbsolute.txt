@@ -1,0 +1,5 @@
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.Models\bin\Release\VMS.Models.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.Models\bin\Release\VMS.Models.pdb
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.Models\obj\Release\VMS.Models.csproj.CoreCompileInputs.cache
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.Models\obj\Release\VMS.Models.dll
+C:\Users\skommanaboina\Source\Repos\gxvisitormanagement\Glx VMS\VMS.Models\obj\Release\VMS.Models.pdb

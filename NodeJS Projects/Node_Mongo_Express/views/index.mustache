@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Shares Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+
+<!--UI design for Shares-->
+<div class="container">
+
+    <h2 style="color: Orange; text-align: center"> Shares Tracker</h2>
+<h3>Add Shares Here</h3>
+<form class="form-inline" action="/shares" method="post">
+<div class="form-group">
+    <input class="form-control" type="text" name ="shareName" placeholder="Enter Share Name">
+    <input class="form-control" type="text" name ="price" placeholder="Enter Price">
+            <select class="form-control" id="shareType" name="shareType">
+            <option  selected value="Select Type">Select-Type</option>
+            <option value="Shares">Shares</option>
+            <option  value="Crypto">Crypto</option>
+        </select>
+    <select class="form-control" id="action" name="action">
+        <option  selected value="Buy/Sell">Buy/Sell</option>
+        <option value="Buy">Buy</option>
+        <option  value="Sell">Sell</option>
+    </select>
+
+
+    <input  class="form-control" type="text" name ="holdings" placeholder="Enter no of holdings">
+    <input  class="form-control" type="date" name ="date" placeholder=" Enter Date">
+    <button class="btn btn-primary" type="submit">Add</button>
+</div>
+</form>
+    <!--<div style="height:105px"></div>-->
+
+<!--Open Shares Section-->
+
+    <div>
+        <h3 style="color: #00b3ee">Open Shares</h3>
+
+        <table class="table table-hover table-dark">
+
+        <thead class="bg-primary text-white">
+        <tr>
+            <th>ShareName</th>
+            <th>SharePrice(USD)</th>
+            <th>ShareType</th>
+            <th>Action</th>
+            <th>No.Of.Holdings</th>
+            <th>Date Of Buy/Sell</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody class="text-primary">
+
+        {{#shares}}
+            <form action="/shares/{{_id}}/completed" method="post">
+                <tr>
+
+                    <td>{{shareName}}</td>
+                    <td>{{price}}</td>
+                    <td>{{shareType}}</td>
+                    <td>{{action}}</td>
+                    <td>{{holdings}}</td>
+                    <td>{{date}}</td>
+                    <td> <button type="submit" class="btn btn-danger">Sell</button></td>
+                </tr>
+            </form>
+
+        {{/shares}}
+
+        </tbody>
+
+        </table>
+
+
+    </div>
+
+
+    <!--Closed Shares Section-->
+    <div>
+        <h3 style="color: red">Sold Shares</h3>
+
+
+
+        <table class="table table-hover">
+
+            <thead class="bg-danger text-black">
+            <tr>
+                <th>ShareName</th>
+                <th>SharePrice(USD)</th>
+                <th>ShareType</th>
+                <th>Action</th>
+                <th>No.Of.Holdings</th>
+                <th>Date Of Buy/Sell</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody class="text-dark">
+
+            {{#doneShares}}
+                <form action="/shares/{{_id}}/completed" method="post">
+                    <tr>
+
+                        <td>{{shareName}}</td>
+                        <td>{{price}}</td>
+                        <td>{{shareType}}</td>
+                        <td>{{action}}</td>
+                        <td>{{holdings}}</td>
+                        <td>{{date}}</td>
+                        <td> <button type="submit" class="btn btn-success">Open</button></td>
+                    </tr>
+                </form>
+
+            {{/doneShares}}
+
+            </tbody>
+
+        </table>
+    </div>
+
+
+    <!--Total Share Holdings-->
+    <div>
+        <h3 style="color: red">Total Share Holdings</h3>
+
+
+
+        <table class="table table-bordered">
+
+            <thead class="bg-primary text-white">
+            <tr>
+                <th>ShareName</th>
+                <th>TotalPrice(USD)</th>
+                <th>Total No.Of.Holdings</th>
+                <th>Profit/Loss %</th>
+
+            </tr>
+            </thead>
+            <tbody style="background-color: aquamarine">
+
+            {{#totalShareHoldings}}
+                <form action="/shares/{{shareName}}/completed" method="post">
+                    <tr>
+
+                        <td style="background-color: darkgoldenrod">{{shareName}}</td>
+                        <td>{{totalPriceUSD}}</td>
+                        <td>{{totalHoldings}}</td>
+                        <!--<td> <button type="submit" class="btn btn-success">Open</button></td>-->
+                    </tr>
+                </form>
+
+            {{/totalShareHoldings}}
+
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+<!--d3.js-->
+<div id="d3Script">
+    <h2 style="color: Orange"> Current Market Prices</h2>
+
+    <form class="form-inline" action="/livePrices" method="post">
+
+        <button type="submit" class="btn btn-success">LivePrices</button>
+
+
+    </form>
+
+
+
+</div>
+<script>
+
+
+
+
+    var liveSharePrices =[
+        {
+            "shareName":"Ethereum",
+            "code":"ETH",
+            "shareType":"Crypto",
+            "price":830
+
+        },
+        {
+            "shareName":"Bitcoin",
+            "code":"BTC",
+            "shareType":"Crypto",
+            "price":8030
+        },
+        {
+            "shareName":"Bitcoin-Cash",
+            "code":"BCH",
+            "shareType":"Crypto",
+            "price":1000
+        },
+        {
+            "shareName": "Litecoin",
+            "code": "LTC",
+            "shareType": "Crypto",
+            "price": 150
+        },
+        {
+            "shareName":"Ford",
+            "code":"F",
+            "shareType":"Share",
+            "price":10.85
+        },
+        {
+            "shareName":"Sprint",
+            "code":"S",
+            "shareType":"Share",
+            "price":5.44
+        },
+        {
+            "shareName":"Apple",
+            "code":"AAPL",
+            "shareType":"Share",
+            "price":161
+        },
+        {
+            "shareName":"Tesla",
+            "code":"TSLA",
+            "shareType":"Share",
+            "price":342.50
+        }
+
+    ];
+
+
+
+
+    var width=1000;
+    var height=1000;
+
+    var openShares = "";
+
+
+
+    var canvas = d3.select("#d3Script")
+            .append("svg")
+            .attr("width",width)
+            .attr("height",height);
+
+    var colorScale = d3.scaleOrdinal()
+            .range(["grey","brown","orange"]);
+
+canvas.selectAll("rect")
+            .data(liveSharePrices)
+            .enter()
+            .append("rect")
+            .attr("width",function(d){
+                return d.price*0.5;
+            })
+            .attr("height",45)
+            .attr("y",function(d,i){return i*50;})
+            .attr("x",175)
+            .attr("fill",function(d){return colorScale(d.price);});
+
+    canvas.selectAll("text")
+            .data(liveSharePrices)
+            .enter()
+            .append("text")
+            .attr("y",function(d,i){return (i*50)+25;})
+            .attr("x",1)
+            .text(function(d){return d.shareName+"-"+ d.price+"$"});
+
+
+
+
+
+
+</script>
+
+</div>
+</body>
+</html>

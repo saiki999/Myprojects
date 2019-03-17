@@ -1,0 +1,426 @@
+﻿
+@model VMS.Models.Employee
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href=@Url.Content("~/Content/css/bootstrap.css")>
+
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    @* <script src="~/Scripts/employee.js"></script>*@
+</head>
+
+
+<body style="background-color : aliceblue">
+
+    <div class="container">
+        <h2>Employees Record</h2>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">Add New Employee</button><br /><br />
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        EmployeeID
+                    </th>
+                    <th>
+                        EmployeeFirstName
+                    </th>
+                    <th>
+                        EmployeeLastName
+                    </th>
+                    <th>
+                        Location
+                    </th>
+                    <th>
+                        Department
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Phone
+                    </th>
+                    @*<th>
+                        EmployeePhotoUrl
+                    </th>*@
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Add Employee</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="Id">ID</label>
+                            <input type="text" class="form-control" id="Id" placeholder="ID" , disabled="disabled" />
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="EmployeeId">EmployeeID</label>
+                            <input type="text" class="form-control" id="EmployeeId" placeholder="EmployeeID" />
+                        </div>
+                        <div class="form-group">
+                            <label for="EmployeeFirstName">EmployeeFirstName</label>
+                            <input type="text" class="form-control" id="EmployeeFirstName" placeholder="EmployeeFirstName" />
+                        </div>
+                        <div class="form-group">
+                            <label for="EmployeeLastName">EmployeeLastName</label>
+                            <input type="text" class="form-control" id="EmployeeLastName" placeholder="EmployeeLastName" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Location">Location</label>
+                            <input type="text" class="form-control" id="Location" placeholder="Location" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Department">Department</label>
+                            <input type="text" class="form-control" id="Department" placeholder="Department" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" id="Email" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Phone">Phone</label>
+                            <input type="text" class="form-control" id="Phone" placeholder="Phone" />
+                        </div>
+                        <div class="form-group">
+                            <label for="EmployeePhotoUrl">EmployeePhotoUrl</label>
+                            <input type="text" class="form-control" id="EmployeePhotoUrl" placeholder="EmployeePhotoUrl" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnAdd" onclick="return Add();">Add</button>
+                    <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none;" onclick="Update();">Update</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        loadData();
+
+        
+
+});
+
+//Load Data function
+function loadData() {
+
+    $.ajax({
+        url: '@Url.Content("~/Employee/GetEmployeeList")',
+        type: "GET",
+        contentType: "application/json;charset=utf-8",
+        dataType: "json",
+        success: function (result) {
+            var html = '';
+            $.each(result, function (key, item) {
+                html += '<tr>';
+
+                html += '<td>' + item.EmployeeId + '</td>';
+                html += '<td>' + item.EmployeeFirstName + '</td>';
+                html += '<td>' + item.EmployeeLastName + '</td>';
+                html += '<td>' + item.Location + '</td>';
+                html += '<td>' + item.Department + '</td>';
+                html += '<td>' + item.Email + '</td>';
+                html += '<td>' + item.Phone + '</td>';
+                //html += '<td>' + item.EmployeePhotoUrl + '</td>';
+
+                html += '<td><a href="#" onclick="return Details(' + item.Id + ')">Edit</a> | <a href="#" onclick="Delele(' + item.Id + ')">Delete</a></td>';
+                html += '</tr>';
+            });
+            $('.tbody').html(html);
+        },
+        error: function (errormessage) {
+            alert(errormessage.responseText);
+        }
+    });
+}
+
+//Add Data Function
+function Add() {
+    var res = validate();
+    if (res == false) {
+        return false;
+    }
+    var empObj = {
+        Id: $('#Id').val(),
+        EmployeeId: $('#EmployeeId').val(),
+        EmployeeFirstName: $('#EmployeeFirstName').val(),
+        EmployeeLastName: $('#EmployeeLastName').val(),
+        Location: $('#Location').val(),
+        Department: $('#Department').val(),
+        Email: $('#Email').val(),
+        Phone: $('#Phone').val(),
+        EmployeePhotoUrl: $('#EmployeePhotoUrl').val()
+    };
+    $.ajax({
+        url: '@Url.Content("~/Employee/Create")',
+        data: JSON.stringify(empObj),
+        type: "POST",
+        contentType: "application/json;charset=utf-8",
+        dataType: "json",
+        success: function (result) {
+
+            loadData();
+            $('#myModal').modal('hide');
+        },
+        error: function (errormessage) {
+
+            alert(errormessage.responseText);
+
+        }
+    });
+}
+
+//Function for getting the Data Based upon Employee ID
+function Details(EmpID) {
+    $('#Id').css('border-color', 'lightgrey');
+    $('#EmployeeId').css('border-color', 'lightgrey');
+    $('#EmployeeFirstName').css('border-color', 'lightgrey');
+    $('#EmployeeLastName').css('border-color', 'lightgrey');
+    $('#Location').css('border-color', 'lightgrey');
+    $('#Department').css('border-color', 'lightgrey');
+    $('#Email').css('border-color', 'lightgrey');
+    $('#Phone').css('border-color', 'lightgrey');
+    $('#EmployeePhotoUrl').css('border-color', 'lightgrey');
+
+    $.ajax({
+        url: '@Url.Content("~/Employee/Details/")' + EmpID,
+        type: "GET",
+        contentType: "application/json;charset=UTF-8",
+        dataType: "json",
+        success: function (result) {
+            $('#Id').val(result.Id);
+            $('#EmployeeId').val(result.EmployeeId);
+            $('#EmployeeFirstName').val(result.EmployeeFirstName);
+            $('#EmployeeLastName').val(result.EmployeeLastName);
+            $('#Location').val(result.Location);
+            $('#Department').val(result.Department);
+            $('#Email').val(result.Email);
+            $('#Phone').val(result.Phone);
+            $('#EmployeePhotoUrl').val(result.EmployeePhotoUrl);
+
+            $('#myModal').modal('show');
+            $('#btnUpdate').show();
+            $('#btnAdd').hide();
+        },
+        error: function (errormessage) {
+            alert(errormessage.responseText);
+        }
+    });
+    return false;
+}
+
+//function for updating employee's record
+function Update() {
+    var res = validate();
+    if (res == false) {
+        return false;
+    }
+    var empObj = {
+        Id: $('#Id').val(),
+        EmployeeId: $('#EmployeeId').val(),
+        EmployeeFirstName: $('#EmployeeFirstName').val(),
+        EmployeeLastName: $('#EmployeeLastName').val(),
+        Location: $('#Location').val(),
+        Department: $('#Department').val(),
+        Email: $('#Email').val(),
+        Phone: $('#Phone').val(),
+        EmployeePhotoUrl: $('#EmployeePhotoUrl').val()
+    };
+    $.ajax({
+        url: '@Url.Content("~/Employee/Edit")',
+        data: JSON.stringify(empObj),
+        type: "POST",
+        contentType: "application/json;charset=utf-8",
+        dataType: "json",
+        success: function (result) {
+            loadData();
+            $('#myModal').modal('hide');
+            $('#Id').val("");
+            $('#EmployeeId').val("");
+            $('#EmployeeFirstName').val("");
+            $('#EmployeeLastName').val("");
+            $('#Location').val("");
+            $('#Department').val("");
+            $('#Email').val("");
+            $('#Phone').val("");
+            $('#EmployeePhotoUrl').val("");
+        },
+        error: function (errormessage) {
+            alert(errormessage.responseText);
+        }
+    });
+}
+
+//function for deleting employee's record
+function Delele(Id) {
+    var ans = confirm("Are you sure you want to delete this Record? It will remove the corresponding record from the visit table.");
+    if (ans) {
+        $.ajax({
+            url: '@Url.Content("~/Employee/Delete/")' + Id,
+            type: "POST",
+            contentType: "application/json;charset=UTF-8",
+            dataType: "json",
+            success: function (result) {
+                loadData();
+
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+}
+
+//Function for clearing the textboxes
+function clearTextBox() {
+    $('#Id').val("");
+    $('#EmployeeId').val("");
+    $('#EmployeeFirstName').val("");
+    $('#EmployeeLastName').val("");
+    $('#Location').val("");
+    $('#Department').val("");
+    $('#Email').val("");
+    $('#Phone').val("");
+    $('#EmployeePhotoUrl').val("");
+    $('#btnUpdate').hide();
+    $('#btnAdd').show();
+    $('#Id').css('border-color', 'lightgrey');
+    $('#EmployeeId').css('border-color', 'lightgrey');
+    $('#EmployeeFirstName').css('border-color', 'lightgrey');
+    $('#EmployeeLastName').css('border-color', 'lightgrey');
+    $('#Location').css('border-color', 'lightgrey');
+    $('#Department').css('border-color', 'lightgrey');
+    $('#Email').css('border-color', 'lightgrey');
+    $('#Phone').css('border-color', 'lightgrey');
+    $('#EmployeePhotoUrl').css('border-color', 'lightgrey');
+}
+//Valdidation using jquery
+function validate() {
+    var isValid = true;
+    //if ($('#EmployeeId').val().trim() == "") {
+    //    $('#EmployeeId').css('border-color', 'Red');
+    //    isValid = false;
+    //}
+    //else {
+    //    $('#EmployeeId').css('border-color', 'lightgrey');
+    //}
+
+    if (!isValidEmployeeId($("#EmployeeId").val())) {
+        $('#EmployeeId').css('border-color', 'Red');
+        isValid = false;
+    }
+    else {
+        $('#EmployeeId').css('border-color', 'lightgrey');
+
+    }
+    
+
+    if ($('#EmployeeFirstName').val().trim() == "") {
+        $('#EmployeeFirstName').css('border-color', 'Red');
+        isValid = false;
+    }
+    else {
+        $('#EmployeeFirstName').css('border-color', 'lightgrey');
+    }
+    if ($('#EmployeeLastName').val().trim() == "") {
+        $('#EmployeeLastName').css('border-color', 'Red');
+        isValid = false;
+    }
+    else {
+        $('#EmployeeLastName').css('border-color', 'lightgrey');
+    }
+    if ($('#Location').val().trim() == "") {
+        $('#Location').css('border-color', 'Red');
+        isValid = false;
+    }
+    else {
+        $('#Location').css('border-color', 'lightgrey');
+    }
+
+    //if ($('#Department').val().trim() == "") {
+    //    $('#Department').css('border-color', 'Red');
+    //    isValid = false;
+    //}
+    //else {
+    //    $('#Department').css('border-color', 'lightgrey');
+    //}
+
+    if (!isValidEmailAddress($("#Email").val())) {
+        $('#Email').css('border-color', 'Red');
+        isValid = false;
+    }
+    else {
+        $('#Email').css('border-color', 'lightgrey');
+    }
+
+    if (!isValidPhone($("#Phone").val())) {
+        $('#Phone').css('border-color', 'Red');
+        isValid = false;
+    }
+    else {
+        $('#Phone').css('border-color', 'lightgrey');
+    }
+
+
+    return isValid;
+    }
+
+    function isValidEmailAddress(emailAddress) {
+        var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+        return pattern.test(emailAddress);
+    };
+
+    function isValidPhone(phoneNumber) {
+        //var filter = /^(?:|[0-9]{10})$/;
+        //var filter = /^(?:[0 - 9]{5}|[0 - 9]{10}|)$/;
+        var filter = /^(?:|[0-9]{10}|[0-9-]{12}|[0-9+]{13})$/;
+        if (filter.test(phoneNumber)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+
+    function isValidEmployeeId(employeeid) {
+        var filter = /^(?:|[a-z0-9]+)$/;
+        //var filter = /^(?:[0 - 9]{5}|[0 - 9]{10}|)$/;
+        if (filter.test(employeeid)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+
+   
+</script>
+
+
+
+
+
+

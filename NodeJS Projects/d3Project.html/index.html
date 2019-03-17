@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+    </head>
+    <body>
+
+    <div>
+
+    </div>
+<!--<p> This is paragraph</p>-->
+<script>
+
+    var intArray =[5,20,30,40];
+
+    //d3 Array functions
+    d3.min(intArray);
+    //d3.external(intArray);//output-[5,40]
+    d3.sum(intArray);// sum of all array elements
+    // and few other methods
+
+
+    var width=1000;
+    var height=1000;
+
+    var widthScale = d3.scale.linear()
+        .domain([0,60])
+        .range([0, width]);
+
+    var colorScale = d3.scale.linear()
+        .domain([0,60])
+        .range(["red","green"]);
+
+    var axis = d3.svg.axis()//gives axis to  our group
+        .ticks(5)// adds display scale ticks
+        .scale(widthScale); //
+    var canvas = d3.select("body")
+            .append("svg")
+            .attr("width",width)
+            .attr("height",height)
+            .append("g")        // g element- group element used to group all the data and apply transformations on that group
+            .attr("transform","translate(20,0)"); //transform- used to transform data group, translate(x,y)- moves entire group based on x,y pixels
+
+//transitions - kind of Animations to graphs and charts
+
+var circle = canvas.append("circle")
+    .attr("cx",50)
+        .attr("cy",500)
+    .attr("fill","red")
+    .attr( "r",25);
+
+    //transitions - kind of Animations to graphs and charts
+circle.transition()
+    .duration(10000)// duration-says for how many seconds transition will happen in
+    .delay(2000) // delay-after how much of delay transition need to happen
+    .attr("cx",100)
+    .attr("fill","green")
+    .attr("r",50)
+    .transition()  //- adding another transition
+    .duration(10000)
+    .delay(7000)
+    .attr("r",45)
+    .attr("fill","orange")
+    .each("end",function(){ d3.select(this).attr("fill","pink");}); // each- after each transition end it will fill color with steal
+
+
+    // selectsall- the rectangles in canvas
+    //data- to display
+    //enter-return place holders
+var bars = canvas.selectAll("rect")
+            .data(intArray)
+    .enter()
+    .append("rect")
+    .attr("width", function(d){return widthScale(d);})
+    .attr("height",50)
+    .attr("fill",function(d){ return colorScale(d);})
+    .attr("y",function(d,i){return i*75});
+
+canvas.append("g")
+    .attr("transform","translate(0,300)")
+    .call(axis);
+
+
+/*var circle = canvas.append("circle")
+             .attr("cx",250) //Orgin Co-ordinates
+            .attr("cy",250)
+            .attr("r",50)
+    .attr("fill","red");
+
+    var rectangle = canvas.append("rect")
+        .attr("width",100).attr("height",50).attr("fill","green");
+
+
+
+
+
+
+    var line = canvas.append("line")
+        .attr("x1",0)
+        .attr("y1",75)
+        .attr("x2",100)
+        .attr("y2",75)
+        .attr("stroke","black")
+        .attr("stroke-width",5); */
+
+
+</script>
+    </body>
+</html>
